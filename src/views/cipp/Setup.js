@@ -91,7 +91,7 @@ const Setup = () => {
       initialValues={{ ...formValues }}
       wizardTitle="Secure Application Model Setup Wizard"
     >
-      <CippWizard.Page title="Step one" description="Choose the type of deployment.">
+      <CippWizard.Page title="Step one - 1" description="Choose the type of deployment.">
         <center>
           <h3 className="text-primary">Step 1</h3>
           <h5 className="card-title mb-4">Choose Options</h5>
@@ -227,7 +227,7 @@ const Setup = () => {
                       <FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>
                     )}
                     Step {getResults.data?.step} - {getResults.data.message}{' '}
-                    {getResults.data.url && <a href={getResults.data?.url}>HERE</a>}
+                    {getResults.data.url && <a target="_blank" href={getResults.data?.url}>HERE</a>}
                   </>
                 )}
               </CCol>
